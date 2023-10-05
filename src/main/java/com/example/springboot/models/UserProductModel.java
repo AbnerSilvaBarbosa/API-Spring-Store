@@ -3,6 +3,7 @@ package com.example.springboot.models;
 import jakarta.persistence.*;
 
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -10,6 +11,7 @@ import java.util.UUID;
 @Table(name = "TB_USER_PRODUCT")
 public class UserProductModel implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
